@@ -728,10 +728,10 @@
         </div>
     </div>
 
-    <div class="controls">
+    <!-- <div class="controls">
         <button class="btn" onclick="downloadResume()">下载简历 (PNG)</button>
         <button class="btn" onclick="printResume()">打印简历</button>
-    </div>
+    </div> -->
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
     
@@ -815,14 +815,14 @@
         //     window.print();
         // }
 
-        // 页面加载完成后的初始化
-        // document.addEventListener('DOMContentLoaded', function() {
-        //     // 添加一些交互效果
-        //     const sections = document.querySelectorAll('.section');
-        //     sections.forEach((section, index) => {
-        //         section.style.animationDelay = `${index * 0.1}s`;
-        //     });
-        // });
+  
+        document.addEventListener('DOMContentLoaded', function() {
+            // 添加一些交互效果
+            const sections = document.querySelectorAll('.section');
+            sections.forEach((section, index) => {
+                section.style.animationDelay = `${index * 0.1}s`;
+            });
+        });
     </script>
 </body>
 </html>
